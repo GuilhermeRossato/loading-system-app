@@ -102,6 +102,8 @@ This is the piece of code that reads all the LoadingSteps:
 
 # Demo
 
+![Preview](https://github.com/GuilhermeRossato/loading-system-app/blob/master/images/release.gif?raw=true)
+
 [Click here](https://rawgit.com/GuilhermeRossato/loading-system-app/master/index.html) to view this repository demo. It's a simple static page.
 
 This Loading System is used in my javascript experiment to simulate minecraft's redstone logic in a similar 3D environment. [Click here to visit its github page](https://github.com/GuilhermeRossato/3D-Redstone-Simulator/), or [click here to run its web app](https://rawgit.com/GuilhermeRossato/3D-Redstone-Simulator/master/index.html).
