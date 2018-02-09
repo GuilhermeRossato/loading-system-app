@@ -1,6 +1,6 @@
 # Loading System for Web-Apps
 
-This is a javascript object-oriented, loading system based on ES6 Promises that aims to help quick-start web applications that need a loading bar at some point on your application.
+This is a object-oriented loading system based on ES6 Promises that aims to help quick-start web applications that need a loading bar at some point in their execution.
 
 ## Usage
 
@@ -12,7 +12,7 @@ class DataRetriever extends LoadingStep {
 		super();
 		this.dataNames = ["data1", "data2"]; // Some random constants
 	}
-	getData() { // Used by your application to retrieve data after it was done
+	getData() { // Optionally used by your application to retrieve data after it was loaded
 		if (!this.loaded) {
 			throw new Error("Data requested before being ready!");
 		}
@@ -109,20 +109,17 @@ This is the piece of code that reads all the LoadingSteps:
 ````
 
 
-# Releases
-
- - v 0.5 []
-
 # How to run this repo locally
 
 Clone to your workspace with
 ````sh
-git clone https://github.com/GuilhermeRossato/loading-system-app.git
+	git clone https://github.com/GuilhermeRossato/loading-system-app.git
 ````
 
 Then run index.php with your browser
 ````sh
-xdg-open ./loading-system-app/index.php
+	xdg-open ./loading-system-app/index.php
+	google-chrome ./loading-system-app/index.php
 ````
 
 # Dependencies, Credits and Inspiration

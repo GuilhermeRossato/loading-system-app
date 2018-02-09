@@ -22,6 +22,20 @@ define([
 			}];
 			LoadingStep.on("progress-update", this.updateProgress.bind(this));
 		}
+		addPhase(instances, name) {
+			this.steps.push({
+				name: name,
+				objects: instances
+			});
+		}
+		addStep(instance, index) {
+			if (index >= this.steps.length) {
+				index = this.steps.length-1;
+			}
+			if (index >= 0) {
+				this.steps[index].objects.push(instance);
+			}
+		}
 		updateProgress(instance) {
 			var progress = LoadingStep.getOverallProgress();
 			LoadingView.setProgress(progress);
