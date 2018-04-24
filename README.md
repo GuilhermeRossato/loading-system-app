@@ -56,7 +56,7 @@ class LoadingSystem {
 	}
 ````
 
-Your application that controls the loading system could also call `loadingStep.addStep(DataRetriever, 1)` instead of editing its constructor, if you prefer. That is especially useful if your application has more than a single LoadingSystem (which should be your default assumption... unless you plan on doing (It-Which-Must-Not-Be-Named](https://en.wikipedia.org/wiki/Singleton_pattern) )
+Your application that controls the loading system could also call `loadingStep.addStep(DataRetriever, 1)` instead of editing its constructor, if you prefer. That is especially useful if your application has more than a single LoadingSystem (which should be your default assumption... unless you plan on using [Singletons](https://en.wikipedia.org/wiki/Singleton_pattern) )
 
 Anyways, we're almost done, create a new `LoadingSystem()` and call the async `.load()` method that the loading will progressed automatically.
 
@@ -119,6 +119,9 @@ Clone to your workspace with
 Then run index.php with your browser
 ````sh
 	xdg-open ./loading-system-app/index.php
+	
+	# or
+	
 	google-chrome ./loading-system-app/index.php
 ````
 
@@ -131,4 +134,4 @@ Then run index.php with your browser
 
 This software is provided 'as is', without any kind of warranty. RequireJS might have its own license and their terms may differ from mine.
 
-If this project saves you some hours of work, well, good for you, we're alike in that aspect.
+I just created it to help me, but if this project saves you some hours of work, well, good for you, we're alike in that aspect.
